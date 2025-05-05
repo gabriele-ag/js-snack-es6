@@ -98,10 +98,13 @@ for (let i = 0; i < totSquadre.length; i++) {
 }
 
 
+
 // Pusho un array di soli falli subiti da ogni squadra
 for (let i = 0; i < totSquadre.length; i++) {
-    delete totSquadre[i].puntiFatti
-    falliAttuali.push(totSquadre[i])
+    falliAttuali.push({
+    nome: totSquadre[i].nome,
+    falliSubiti: totSquadre[i].falliSubiti,
+   });
 }
 
 
